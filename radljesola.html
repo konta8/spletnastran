@@ -1,28 +1,136 @@
- 
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OŠ Radlje ob Dravi</title>
 
-<html> 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<head> 
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f0ff, #d5e8f5);
+            color: #243247;
+            line-height: 1.7;
+        }
 
-<title>OŠ RadljeobDravi</title> 
+        header {
+            background: linear-gradient(135deg, #244c83, #3478a8);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
 
-</head> 
-<body style="background: linear-gradient(to right, #344f60, #e87520);">
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
 
-<!-- KOMENTAR--> 
-<h1 style="color: red;">Osnovna šola Radlje ob Dravi</h1>
- <img src = "osradlje.jpg" width="400"
- <br>
-<h2>opis OŠ Radlje ob Dravi</h2>
-<p>
-Osnovna šola Radlje ob Dravi je javna osnovna šola, ki se nahaja v kraju Radlje ob Dravi. Šolo obiskujejo učenci od 1. do 9. razreda, poleg matične šole pa ima tudi podružnici v Vuhredu in na Remšniku. Šola učencem omogoča pridobivanje znanja na različnih področjih ter jih spodbuja k ustvarjalnosti, samostojnosti, sodelovanju in odgovornosti. Poleg pouka se učenci lahko vključujejo tudi v različne interesne dejavnosti, športne aktivnosti, tekmovanja in druge šolske projekte. Šola si prizadeva ustvariti prijetno, varno in spodbudno okolje, v katerem se učenci dobro počutijo ter lahko razvijajo svoje talente in sposobnosti. Pomembno vlogo imajo tudi dobri odnosi med učenci, učitelji in starši. Osnovna šola Radlje ob Dravi tako ni namenjena samo izobraževanju, ampak tudi vzgoji, druženju in pripravi učencev na nadaljnje šolanje in življenje.
-</p>
-<br>
-<a href="index.html"> <img src="puscica.png" width="50"
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(35, 67, 100, 0.12);
+        }
 
+        h2 {
+            color: #285b8f;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #a8d5f0;
+            padding-bottom: 10px;
+        }
 
+        .glavna-slika {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
 
-</body> 
-</html> 
+        p {
+            font-size: 1.08rem;
+            color: #46566b;
+        }
+
+        .povezava {
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .povezava:hover {
+            transform: translateY(-3px);
+        }
+
+        .povezava img {
+            width: 50px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #52677c;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                margin: 20px 12px;
+                padding: 22px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Osnovna šola Radlje ob Dravi</h1>
+    </header>
+
+    <main>
+        <h2>Opis OŠ Radlje ob Dravi</h2>
+
+        <img src="osradlje.jpg" width="400"
+             alt="Osnovna šola Radlje ob Dravi"
+             class="glavna-slika">
+
+        <p>
+            Osnovna šola Radlje ob Dravi je javna vzgojno-izobraževalna ustanova, ki učencem omogoča pridobivanje znanja in razvijanje različnih sposobnosti od 1. do 9. razreda. Šola ima poleg matične šole tudi podružnici na Remšniku in v Vuhredu ter vrtec.
+
+Ponaša se s sodobno opremljenimi učilnicami, telovadnico in športno dvorano. Učencem ponuja različne interesne dejavnosti, kulturne in športne prireditve ter številne priložnosti za ustvarjanje in sodelovanje. Posebno pozornost namenja kakovostnemu pouku, prijateljskim odnosom, ustvarjalnosti in varnemu šolskemu okolju.
+
+Njen cilj je, da učencem poleg znanja pomaga razvijati odgovornost, samostojnost, spoštovanje in dobre medsebojne odnose.
+        </p>
+
+        <a href="index.html" class="povezava">
+            <img src="puscica.png" width="50" alt="Nazaj">
+        </a>
+    </main>
+
+    <footer>
+        OŠ Radlje ob Dravi
+    </footer>
+
+</body>
+</html>
